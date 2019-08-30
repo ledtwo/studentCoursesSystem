@@ -38,6 +38,7 @@
 
 
 ![【弹框出现 显示详情】](https://www.platonic.xyz/usr/uploads/2019/08/1132046894.png)
+
 由于在转化课程名的阶段，找不到详尽的查询接口，碍于水平有限，缓兵之计，将课程id代替为课程名称登上前台。不过，这只是暂时，我相信，只要有和后台的一点沟通，这个功能我将会及时修复。
 
 [点击 gitHub下载地址](https://github.com/ledtwo/studentCoursesSystem)
