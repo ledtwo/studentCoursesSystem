@@ -1,0 +1,61 @@
+body,
+html {
+    margin : 0 !important;
+    padding: 0;
+}
+
+/* 解决下划线的问题 */
+.el-menu.el-menu--horizontal{
+    border-bottom:rgb(84, 92, 100);
+}
+.el-input__inner {
+    padding-right: 0 !important
+}
+
+.el-table__header .has-gutter tr th,.el-table__body td,.cell{
+    text-align: center!important;
+}
+.dialogOne .el-dialog{
+    width: 40%;
+    border-radius:1em;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6)
+}
+.dialogOne .el-dialog__body{
+    padding: 0 10% 0 10%
+  } 
+.dialogOne .el-dialog__body .el-form{
+    padding: 5% 10% 2%   
+}
+.dialogOne .el-dialog__body .el-form .el-select{
+    float: left;
+}
+.el-textarea{
+    font-size: 0.8em
+}
+.el-badge__content.is-fixed{
+    top: 1em
+}
+.el-col-8:hover{
+    opacity: 1;
+}
+/* 调整选课框位置 */
+.el-col-8{
+    align-self: center;
+    opacity: 0.9;
+ }
+.el-divider{
+    margin: 2em 0 2em 0;
+}
+.el-divider__text{
+    font-size: 0.6em;
+    font-weight: 100;
+}
+.el-image-viewer__close:hover{
+    opacity: 1;
+}
+.el-image-viewer__close{
+    margin-top:2em;
+}
+/* .v-modal{
+    display: none;
+} */
