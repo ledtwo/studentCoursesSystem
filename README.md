@@ -1,30 +1,42 @@
-# 【学生课程信息管理系统】
+# 【学生课程信息管理系统 使用文档】
+>本系统基于vue+element-UI搭建，配合面试题库中后端服务开发，具有学生信息管理、课程信息管理、选课表管理、学生选课等多种功能。将功能区域划分为组件，数据处理迅速，面试题目中要求的所有功能皆已实现，并提供严谨的校验及友好的交互操作。
 
->本系统基于vue+element-UI搭建，具有学生信息管理、课程信息管理、学生选课、选课管理等多种功能。利用组件，提供友好的交互操作。
-### 详情请参考系统文件夹下 配套操作文档
+### 界面概览如下
+![【我要选课】页面](https://www.platonic.xyz/usr/uploads/2019/08/1964897996.png)
+![【学生管理】页面](https://www.platonic.xyz/usr/uploads/2019/08/1104640927.png)
+![【课程管理】页面](https://www.platonic.xyz/usr/uploads/2019/08/333019607.png)
 
-## Build Setup
+## 一、系统部署
 
-``` bash
-# install dependencies
-npm install
+ 1. 1.检查本机是否有npm、node环境
+ 2. 2.将后台服务器开启 ，检查是否能够正常访问【重要！】
+ 3. 3.将项目文件夹导入编译器【本人使用vscode开发，建议一致】
+ 4. 4.打开终端 在此项目文件夹的环境下 执行指令 npm i 【必须！】
+ 5. 5.待所有依赖包安装完成后 继续执行指令  npm run dev
+ 6. 6.待终端中提示 在浏览器输入此地址访问
 
-# serve with hot reload at localhost:8080
-npm run dev
+![终端中提示地址](https://www.platonic.xyz/usr/uploads/2019/08/3464555742.png)
+7.查看页面 执行想要的操作
 
-# build for production with minification
-npm run build
+## 二、角色功能分类
 
-# build for production and view the bundle analyzer report
-npm run build --report
+在本项目中，以badge标识符区分用户角色
+Admin 管理员
+Student 学生
+如下图，导航栏角标所示：
+![在这里插入图片描述](https://www.platonic.xyz/usr/uploads/2019/08/12430679.png)
+管理员：提供给管理员具备的服务较多，能够学生表、课程表及相关学生的选课情况，进行数据的CURD操作。
+学生：在【我要选课】页面，在选择框输入(或选择)自己的信息【ps：只有在数据库中有的数据才能被选择】
 
-# run unit tests
-npm run unit
+## 三、疑难概述
 
-# run e2e tests
-npm run e2e
+再对课程表进行数据处理的过程中，我发现学生信息获取对应后台的接口，返回的数据很有层次感，所以就针对表单做了融合，将每个学生选课的数目在表单上显示出来，同时，点击操作能够查看当前同学的选的是哪几门课程。
+如图所示：
 
-# run all tests
-npm test
-```
 
+![点击【张美丽同学】对应的课程](https://www.platonic.xyz/usr/uploads/2019/08/1030213980.png)
+
+
+![【弹框出现 显示详情】段，找不到详尽的查询借口，碍于水平有限，缓兵之计，将课程id代替为课程名称登上前台。不过，这只是暂时，我相信，只要有和后台的一点沟通，这个功能我将会及时修复。
+
+[点击 gitHub下载地址](https://github.com/ledtwo/studentCoursesSystem)
