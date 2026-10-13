@@ -2,7 +2,7 @@
   "name": "course-system",
   "version": "1.0.0",
   "description": "This is a course management system.",
-  "author": "platonic <magicscript@163.com>",
+  "author": "ledtwo",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
